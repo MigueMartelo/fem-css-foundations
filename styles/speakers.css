@@ -55,3 +55,9 @@
     row-gap: 60px;
   }
 }
+
+@media (max-width: 840px) {
+  .nav {
+    background-color: var(--color-text-on-primary);
+  }
+}

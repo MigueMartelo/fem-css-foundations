@@ -116,6 +116,11 @@ p {
   display: none;
 }
 
+.menu,
+.close {
+  cursor: pointer;
+}
+
 @media (max-width: 1220px) {
   .button {
     font-size: 24px;
@@ -141,6 +146,10 @@ p {
     display: block;
   }
 
+  .body--no-scroll {
+    overflow: hidden;
+  }
+
   .nav {
     position: absolute;
     width: 100vw;
@@ -149,6 +158,7 @@ p {
     top: 60px;
     left: -100%;
     padding-top: 60px;
+    transition: left 0.2s linear;
   }
 
   .nav--visible {
