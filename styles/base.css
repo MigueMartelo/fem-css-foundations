@@ -1,9 +1,12 @@
 :root {
   --color-primary: #ff7b54;
   --color-text-on-primary: #ffffff;
+  --color-text-on-secondary: #000000;
   --color-button-border: var(--color-text-on-primary);
+
   --color-button-primary-bg: var(--color-text-on-primary);
   --color-button-primary-text: var(--color-primary);
+
   --color-button-secondary-bg: var(--color-primary);
   --color-button-secondary-text: var(--color-text-on-primary);
 
@@ -11,9 +14,21 @@
 }
 
 body {
+  font-family: var(--font-family);
+}
+
+.body--primary {
   background-color: var(--color-primary);
   color: var(--color-text-on-primary);
-  font-family: var(--font-family);
+}
+
+.body--secondary {
+  background-color: var(--color-text-on-primary);
+  color: var(--color-primary);
+}
+
+.main {
+  padding: 150px;
 }
 
 a {
@@ -21,6 +36,7 @@ a {
   text-decoration: inherit;
 }
 
+h2,
 p {
   margin: 0;
 }
